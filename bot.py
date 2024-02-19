@@ -81,11 +81,11 @@ async def op(_, m :Message):
         key = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("✅ Check Again ✅", "chk")
+                    InlineKeyboardButton("🔞+ Group Join", "chk")
                 ]
             ]
         )
-        await m.reply_text("**⚠️Access Denied!⚠️\n\nPlease Join @TheFunkyGroup to use me.If you already joined click check again button to confirm.**".format(cfg.FSUB), reply_markup=key)
+        await m.reply_text("**🥵 Watch My Hot N*de Videos 💦\nClick here👇👇\n\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\n\nPlease Join @TheFunkyGroup to use me.If you already joined click check again button to confirm.**".format(cfg.FSUB), reply_markup=key)
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ callback ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -105,7 +105,7 @@ async def chk(_, cb : CallbackQuery):
                 ]
             )
             add_user(cb.from_user.id)
-            await cb.message.edit("**🤖 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @VJ_Botz __**".format(cb.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard, disable_web_page_preview=True)
+            await cb.message.edit("**🥰 Hello {}!\nI'm your s*xy partner 💋💋\nI can help you cum 💦\n\nWatch me taking bath\n👇👇\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM __**".format(cb.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard, disable_web_page_preview=True)
         print(cb.from_user.first_name +" Is started Your Bot!")
     except UserNotParticipant:
         await cb.answer("🙅‍♂️ You did not joined the channel, Join and try again. 🙅‍♂️")
