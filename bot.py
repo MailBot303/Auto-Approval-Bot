@@ -81,34 +81,34 @@ async def op(_, m :Message):
         key = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("✅ Check Again ✅", "chk")
+                    InlineKeyboardButton("Join 🔞+ Group", url="https://t.me/Chatting_Group_Adult")
                 ]
             ]
         )
-        await m.reply_text("**🥵 Watch My Hot N*de Videos 💦\nClick here👇👇\n\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\n\nPlease Join https://t.me/+FkBARZVToxRmNzc1 to use me.If you already joined click check again button to confirm.**".format(cfg.FSUB), reply_markup=key)
+        await m.reply_text("**🥵 Watch My Hot N*de Videos 💦\nClick here👇👇\n\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\n\nPlease Join https://t.me/+FkBARZVToxRmNzc1 to use me.If you already joined click /start to continue.**".format(cfg.FSUB), reply_markup=key)
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ callback ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-@app.on_callback_query(filters.regex("chk"))
-async def chk(_, cb : CallbackQuery):
-    try:
-        await app.get_chat_member(cfg.CHID, cb.from_user.id)
-        if cb.message.chat.type == enums.ChatType.PRIVATE:
-            keyboard = InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("🔞+ Group ", url="https://t.me/Chatting_Group_Adult"),
-                        InlineKeyboardButton("🗂 Repo", url="https://pastebin.com/raw/sK5NzESH")
-                    ],[
-                        InlineKeyboardButton("📞 Call Me +91765586....", url="https://cutt.ly/dwlJZqqM")
-                    ]
-                ]
-            )
-            add_user(cb.from_user.id)
-            await cb.message.edit("**🥰 Hello {}!\nI'm your s*xy partner 💋💋\nI can help you cum 💦\n\nWatch me taking bath\n👇👇\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM __**".format(cb.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard, disable_web_page_preview=True)
-        print(cb.from_user.first_name +" Is started Your Bot!")
-    except UserNotParticipant:
-        await cb.answer("🙅‍♂️ You did not joined the channel, Join and try again. 🙅‍♂️")
+#@app.on_callback_query(filters.regex("chk"))
+#async def chk(_, cb : CallbackQuery):
+   # try:
+      #  await app.get_chat_member(cfg.CHID, cb.from_user.id)
+       # if cb.message.chat.type == enums.ChatType.PRIVATE:
+        #    keyboard = InlineKeyboardMarkup(
+         #       [
+            #        [
+            #            InlineKeyboardButton("🔞+ Group ", url="https://t.me/Chatting_Group_Adult"),
+           #             InlineKeyboardButton("🗂 Repo", url="https://pastebin.com/raw/sK5NzESH")
+           #         ],[
+            #            InlineKeyboardButton("📞 Call Me +91765586....", url="https://cutt.ly/dwlJZqqM")
+           #         ]
+         #       ]
+  #          )
+ #           add_user(cb.from_user.id)
+#            await cb.message.edit("**🥰 Hello {}!\nI'm your s*xy partner 💋💋\nI can help you cum 💦\n\nWatch me taking bath\n👇👇\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM __**".format(cb.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard, disable_web_page_preview=True)
+ #       print(cb.from_user.first_name +" Is started Your Bot!")
+ #   except UserNotParticipant:
+ #       await cb.answer("🙅‍♂️ You did not joined the channel, Join and try again. 🙅‍♂️")
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ info ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
