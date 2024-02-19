@@ -60,9 +60,9 @@ async def op(_, m :Message):
                 [
                     [
                         InlineKeyboardButton("🔞+ Group ", url="https://t.me/Chatting_Group_Adult"),
-                        InlineKeyboardButton("📁 Repo", callback_data="Contact my Owner for the Repo, You can message him directly here 👉🏻 @fps_244")
+                        InlineKeyboardButton("🗂 Repo", url="https://pastebin.com/raw/sK5NzESH")
                     ],[
-                        InlineKeyboardButton("🌚 My Master ✨", url="https://t.me/fps_244")
+                        InlineKeyboardButton("🗿 My Master 💬", url="https://t.me/fps_244")
                     ]
                 ]
             )
