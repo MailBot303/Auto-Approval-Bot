@@ -58,7 +58,7 @@ async def op(_, m :Message):
                         InlineKeyboardButton("🔞+ Group ", url="https://t.me/Chatting_Group_Adult"),
                         InlineKeyboardButton("🗂 Repo", url="https://pastebin.com/raw/sK5NzESH")
                     ],[
-                        InlineKeyboardButton("🗿 My Master 💬", url="https://t.me/fps_244")
+                        InlineKeyboardButton("📞 Call Me +91765586...", url="https://cutt.ly/dwlJZqqM")
                     ]
                 ]
             )
@@ -100,7 +100,7 @@ async def chk(_, cb : CallbackQuery):
                         InlineKeyboardButton("🔞+ Group ", url="https://t.me/Chatting_Group_Adult"),
                         InlineKeyboardButton("🗂 Repo", url="https://pastebin.com/raw/sK5NzESH")
                     ],[
-                        InlineKeyboardButton("🗿 My Master 💬", url="https://t.me/fps_244")
+                        InlineKeyboardButton("📞 Call Me +91765586...", url="https://cutt.ly/dwlJZqqM")
                     ]
                 ]
             )
