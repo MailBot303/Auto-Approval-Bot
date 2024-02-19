@@ -58,7 +58,7 @@ async def op(_, m :Message):
                         InlineKeyboardButton("🔞+ Group ", url="https://t.me/Chatting_Group_Adult"),
                         InlineKeyboardButton("🗂 Repo", url="https://pastebin.com/raw/sK5NzESH")
                     ],[
-                        InlineKeyboardButton("📞 Call Me +91765586...", url="https://cutt.ly/dwlJZqqM")
+                        InlineKeyboardButton("📞 Call Me +91765586....", url="https://cutt.ly/dwlJZqqM")
                     ]
                 ]
             )
@@ -81,11 +81,11 @@ async def op(_, m :Message):
         key = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔞+ Group Join", "chk")
+                    InlineKeyboardButton("✅ Check Again ✅", "chk")
                 ]
             ]
         )
-        await m.reply_text("**🥵 Watch My Hot N*de Videos 💦\nClick here👇👇\n\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\n\nPlease Join @TheFunkyGroup to use me.If you already joined click check again button to confirm.**".format(cfg.FSUB), reply_markup=key)
+        await m.reply_text("**🥵 Watch My Hot N*de Videos 💦\nClick here👇👇\n\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\n\nPlease Join https://t.me/+YJjrQQ81qqhjYzRl to use me.If you already joined click check again button to confirm.**".format(cfg.FSUB), reply_markup=key)
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ callback ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -100,7 +100,7 @@ async def chk(_, cb : CallbackQuery):
                         InlineKeyboardButton("🔞+ Group ", url="https://t.me/Chatting_Group_Adult"),
                         InlineKeyboardButton("🗂 Repo", url="https://pastebin.com/raw/sK5NzESH")
                     ],[
-                        InlineKeyboardButton("📞 Call Me +91765586...", url="https://cutt.ly/dwlJZqqM")
+                        InlineKeyboardButton("📞 Call Me +91765586....", url="https://cutt.ly/dwlJZqqM")
                     ]
                 ]
             )
