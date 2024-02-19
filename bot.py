@@ -59,10 +59,10 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/vj_botz"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/vj_bot_disscussion")
+                        InlineKeyboardButton("🔞+ Group ", url="https://t.me/Chatting_Group_Adult"),
+                        InlineKeyboardButton("📁 Repo", await cb.answer(" Contact My Master For Repo ✅ ")
                     ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/vjmasterblastbot?startgroup")
+                        InlineKeyboardButton("🌚 My Master ✨", url="https://t.me/fps_244")
                     ]
                 ]
             )
@@ -73,7 +73,7 @@ async def op(_, m :Message):
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/vjmasterblastbot?startgroup")
+                        InlineKeyboardButton("💁‍♂️ Start me in private 💁‍♂️", url="https://t.me/vjmasterblastbot?startgroup")
                     ]
                 ]
             )
