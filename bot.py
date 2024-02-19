@@ -14,17 +14,9 @@ app = Client(
 )
 
 gif = [
-    'https://te.legra.ph/file/a1b3d4a7b5fce249902f7.mp4',
-    'https://te.legra.ph/file/0c855143a4039108df602.mp4',
-    'https://te.legra.ph/file/d7f3f18a92e6f7add8fcd.mp4',
-    'https://te.legra.ph/file/9e334112ee3a4000c4164.mp4',
-    'https://te.legra.ph/file/652fc39ae6295272699c6.mp4',
-    'https://te.legra.ph/file/702ca8761c3fd9c1b91e8.mp4',
-    'https://te.legra.ph/file/a1b3d4a7b5fce249902f7.mp4',
-    'https://te.legra.ph/file/d7f3f18a92e6f7add8fcd.mp4',
-    'https://te.legra.ph/file/0c855143a4039108df602.mp4',
-    'https://te.legra.ph/file/9e334112ee3a4000c4164.mp4',
-    'https://te.legra.ph/file/702ca8761c3fd9c1b91e8.mp4'
+    'https://telegra.ph/file/75d44ed57134a143f5730.mp4',
+    'https://telegra.ph/file/75d44ed57134a143f5730.mp4',
+    'https://telegra.ph/file/75d44ed57134a143f5730.mp4'
 ]
 
 
@@ -38,7 +30,7 @@ async def approve(_, m : Message):
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
         img = random.choice(gif)
-        await app.send_video(kk.id,img, "**Hello {}!\nWelcome To {}\n\n__Powerd By : @VJ_Botz __**".format(m.from_user.mention, m.chat.title))
+        await app.send_video(kk.id,img, "**Hello Baby 💋💋\nWant to watch me n*ked??🥵 \n\nClick here to watch me cum 💦\n👇👇\n\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM\nhttps://cutt.ly/dwlJZqqM".format(m.from_user.mention, m.chat.title))
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
