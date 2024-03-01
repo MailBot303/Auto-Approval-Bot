@@ -118,7 +118,11 @@ async def dbtool(_, m : Message):
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Broadcast ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 @app.on_message(filters.command("bcast") & filters.user(cfg.SUDO))
-async def bcast(_, m : Message):
+async def bcast(_, m: Message):
+    if m.reply_to_message is None:
+        await m.reply_text("Please reply to a message to broadcast.")
+        return
+
     allusers = users
     lel = await m.reply_text("`⚡️ Processing...`")
     success = 0
@@ -128,24 +132,23 @@ async def bcast(_, m : Message):
     for usrs in allusers.find():
         try:
             userid = usrs["user_id"]
-            #print(int(userid))
             if m.command[0] == "bcast":
                 await m.reply_to_message.copy(int(userid))
-            success +=1
+            success += 1
         except FloodWait as ex:
             await asyncio.sleep(ex.value)
             if m.command[0] == "bcast":
                 await m.reply_to_message.copy(int(userid))
         except errors.InputUserDeactivated:
-            deactivated +=1
+            deactivated += 1
             remove_user(userid)
         except errors.UserIsBlocked:
-            blocked +=1
+            blocked += 1
         except Exception as e:
             print(e)
-            failed +=1
+            failed += 1
 
-    await lel.edit(f"✅Successfull to `{success}` users.\n❌ Faild to `{failed}` users.\n👾 Found `{blocked}` Blocked users \n👻 Found `{deactivated}` Deactivated users.")
+    await lel.edit(f"✅ Successful to `{success}` users.\n❌ Failed to `{failed}` users.\n👾 Found `{blocked}` Blocked users \n👻 Found `{deactivated}` Deactivated users.")
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Broadcast Forward ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
