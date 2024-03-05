@@ -14,9 +14,9 @@ app = Client(
 )
 
 gif = [
-    'https://telegra.ph/file/75d44ed57134a143f5730.mp4',
-    'https://telegra.ph/file/75d44ed57134a143f5730.mp4',
-    'https://telegra.ph/file/75d44ed57134a143f5730.mp4'
+    'https://telegra.ph/file/4d384e0ad29af76974c4c.jpg',
+    'https://telegra.ph/file/4d384e0ad29af76974c4c.jpg',
+    'https://telegra.ph/file/4d384e0ad29af76974c4c.jpg'
 ]
 
 
